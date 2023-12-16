@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency COnverter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h1>Currency Converter</h1>
+   <h3><label for="a">Amount In INR:</label></h3>
+    <input type="text" id="a"><br><br>
+    <button type="button" onclick="convert()" class="btn btn-success">Convert</button><br>
+    <h3>Result:</h3>
+    <p id="result">Converted Amount Will be displayed here</p>
+    </div> 
+    <script>
+       function convert() {
+        var a=document.getElementById("a").value;
+        var b=0.014     
+        var result=a*b
+             document.getElementById("result").innerHTML= result
+       }
+
+    </script>
+</body>
+</html>
